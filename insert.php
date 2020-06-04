@@ -31,7 +31,7 @@ try {//tryとcatchでエラーを検出しているとひとまず覚える。�
 //3.データ登録SQL作成
 //3-1: sql作る処理
 $sql = 'INSERT INTO gs_an_table(id, name, email, naiyou,
-indate)VALUES(NULL, :a1, :a2, :a3, sysdate())';//ここの:a1,:a2,:a3下の記述とリンクしている
+indate)VALUES(NULL, :a1, :a2, :a3, sysdate())';//ここの:a1,:a2,:a3下の記述とリンクしている。idと日時はidがオートインクリメントで自動生成になっていることと、日時はsysdateで自動でpostされた時間を取るためここでの記述のみで項目3-2以降で記述不要となっている。
 
 
 //3-2: sql文をstmtに渡す処理
